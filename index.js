@@ -23,6 +23,7 @@ const corsOptions = {
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS']
 };
 app.use(cors(corsOptions));
+app.use(cors());
 app.use(helmet());
 
 dbConnect();

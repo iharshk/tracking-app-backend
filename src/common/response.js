@@ -14,6 +14,11 @@ exports[5000] = {
     msg: "No Data Found.",
 };
 
+exports[5001] = {
+    code: 5001,
+    msg: "Successfull.",
+};
+
 exports[6000] = {
     code: 6000,
     msg: "Error Occurred.",

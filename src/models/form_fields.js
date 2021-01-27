@@ -1,4 +1,5 @@
-import mongoose, { Schema } from 'mongoose';
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const uniqueValidator = require('mongoose-unique-validator');
 
@@ -56,5 +57,5 @@ FormFieldsSchema.methods = {
   }
 };
 
-const FormFields = mongoose.model('form_fields', FormFieldsSchema);
+const FormFields = mongoose.model('Fields', FormFieldsSchema);
 module.exports = FormFields;

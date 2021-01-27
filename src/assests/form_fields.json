@@ -1,102 +1,180 @@
-[
+{
+  "signup": [
     {
-        "name": "full_name",
-        "inputType": "text",
-        "label": "Full Name",
-        "order": 1,
-        "process": "signup",
-        "type": "input",
-        "html5_validation": [
-          {
-            "minlength": 3,
-            "maxlength": 250
-          }
-        ],
-        "validations": [
-          {
-            "name": "required",
-            "validations": "required",
-            "message": "This field is required.",
-            "action": ["continue"]
-          },
-          {
-            "name": "pattern",
-            "validations": "/^(?!^ +$)^.+$/",
-            "message": "Name is invalid.",
-            "action": ["continue"]
-          },
-          {
-            "name": "minlength",
-            "validations": "minLength",
-            "message": "Name should be atleast 3 characters.",
-            "args": 3,
-            "action": ["continue"]
-          },
-          {
-            "name": "maxlength",
-            "validations": "maxLength",
-            "message": "Name should not be more than 100 characters.",
-            "args": 100,
-            "action": ["continue"]
-          }
-        ]
-    },
-    {
-    "name": "email_address",
-    "inputType": "text",
-    "label": "Email",
-    "order": 2,
-    "placeholder": "Email",
-    "process": "signup",
-    "html5_validation": [
+      "name": "full_name",
+      "inputType": "text",
+      "label": "Full Name",
+      "order": 1,
+      "process": "signup",
+      "type": "input",
+      "html5_validation": [
         {
-        "maxlength": 155
+          "minlength": 3,
+          "maxlength": 250
         }
-    ],
-    "type": "input",
-    "validations": [
+      ],
+      "validations": [
         {
-        "name": "required",
-        "validations": "required",
-        "message": "Please enter email.",
-        "action": ["continue"]
+          "name": "required",
+          "validations": "required",
+          "message": "This field is required.",
+          "action": [
+            "continue"
+          ]
         },
         {
-        "name": "pattern",
-        "validations": "/^([a-zA-ZÀ-ÿ0-9_\\-\\.]{1,})@([a-zA-Z0-9_\\-]{2,})\\.([a-zA-Z]{2,})(\\.([a-zA-Z]){2,})?$/",
-        "message": "The email is invalid.",
-        "action": ["continue"]
-        }
-    ]
-    },
-    {
-    "name": "password",
-    "inputType": "text",
-    "label": "Password",
-    "order": 3,
-    "placeholder": "Password",
-    "process": "signup",
-    "type": "input",
-    "validations": [
+          "name": "pattern",
+          "validations": "/^(?!^ +$)^.+$/",
+          "message": "Name is invalid.",
+          "action": [
+            "continue"
+          ]
+        },
         {
-        "name": "required",
-        "validations": "required",
-        "message": "Please enter password.",
-        "action": ["continue"]
+          "name": "minlength",
+          "validations": "minLength",
+          "message": "Name should be atleast 3 characters.",
+          "args": 3,
+          "action": [
+            "continue"
+          ]
+        },
+        {
+          "name": "maxlength",
+          "validations": "maxLength",
+          "message": "Name should not be more than 100 characters.",
+          "args": 100,
+          "action": [
+            "continue"
+          ]
         }
-    ],
-    "value_api": ""
+      ]
     },
     {
-    "_id": "5e82201fe0bd014c7c994ad6",
-    "name": "signup",
-    "label": "Signup",
-    "options": {},
-    "order": 4,
-    "placeholder": "",
-    "process": "signup",
-    "type": "button",
-    "html5_validation": [],
-    "validations": []
+      "name": "mobile_number",
+      "inputType": "tel",
+      "label": "Mobile Number",
+      "order": 2,
+      "process": "signup",
+      "type": "input",
+      "html5_validation": [
+        {
+          "minlength": 10,
+          "maxlength": 10
+        }
+      ],
+      "validations": [
+        {
+          "name": "required",
+          "validations": "required",
+          "message": "This field is required.",
+          "action": ["continue"]
+        },
+        {
+          "name": "pattern",
+          "validations": "/^([6-9]{1}([0-9])+)$/",
+          "message": "Mobile Number is invalid.",
+          "action": ["continue"]
+        },
+        {
+          "name": "minlength",
+          "validations": "minLength",
+          "message": "Mobile Number should be atleast 10 characters.",
+          "args": 10,
+          "action": ["continue"]
+        },
+        {
+          "name": "maxlength",
+          "validations": "maxLength",
+          "message": "Mobile Number should not be more than 10 characters.",
+          "args": 10,
+          "action": ["continue"]
+        }
+      ]
+    },
+    {
+      "name": "email_address",
+      "inputType": "text",
+      "label": "Email",
+      "order": 3,
+      "placeholder": "Email",
+      "process": "signup",
+      "html5_validation": [
+        {
+          "maxlength": 155
+        }
+      ],
+      "type": "input",
+      "validations": [
+        {
+          "name": "required",
+          "validations": "required",
+          "message": "Please enter email.",
+          "action": [
+            "continue"
+          ]
+        },
+        {
+          "name": "pattern",
+          "validations": "/^([a-zA-ZÀ-ÿ0-9_\\-\\.]{1,})@([a-zA-Z0-9_\\-]{2,})\\.([a-zA-Z]{2,})(\\.([a-zA-Z]){2,})?$/",
+          "message": "The email is invalid.",
+          "action": [
+            "continue"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "password",
+      "inputType": "text",
+      "label": "Password",
+      "order": 4,
+      "placeholder": "Password",
+      "process": "signup",
+      "type": "input",
+      "validations": [
+        {
+          "name": "required",
+          "validations": "required",
+          "message": "Please enter password.",
+          "action": [
+            "continue"
+          ]
+        }
+      ],
+      "value_api": ""
+    },
+    {
+      "name": "confirm_password",
+      "inputType": "text",
+      "label": "Confirm Password",
+      "order": 4,
+      "placeholder": "Confirm Password",
+      "process": "signup",
+      "type": "input",
+      "validations": [
+        {
+          "name": "required",
+          "validations": "required",
+          "message": "Please confirm password.",
+          "action": [
+            "continue"
+          ]
+        }
+      ],
+      "value_api": ""
+    },
+    {
+      "_id": "5e82201fe0bd014c7c994ad6",
+      "name": "signup",
+      "label": "Signup",
+      "options": {},
+      "order": 5,
+      "placeholder": "",
+      "process": "signup",
+      "type": "button",
+      "html5_validation": [],
+      "validations": []
     }
-]
+  ]
+}
