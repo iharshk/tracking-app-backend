@@ -4,6 +4,7 @@
       "name": "full_name",
       "inputType": "text",
       "label": "Full Name",
+      "placeholder": "Full Name",
       "order": 1,
       "process": "signup",
       "type": "input",
@@ -52,8 +53,9 @@
     },
     {
       "name": "mobile_number",
-      "inputType": "tel",
+      "inputType": "text",
       "label": "Mobile Number",
+      "placeholder": "Mobile Number",
       "order": 2,
       "process": "signup",
       "type": "input",
@@ -163,18 +165,6 @@
         }
       ],
       "value_api": ""
-    },
-    {
-      "_id": "5e82201fe0bd014c7c994ad6",
-      "name": "signup",
-      "label": "Signup",
-      "options": {},
-      "order": 5,
-      "placeholder": "",
-      "process": "signup",
-      "type": "button",
-      "html5_validation": [],
-      "validations": []
     }
   ]
 }
